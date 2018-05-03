@@ -2,11 +2,26 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp" />
-    <ClCompile Include="Source\Console.cpp" />
+    <ClCompile Include="Source\Console.cpp">
+      <Filter>IO</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Console.hpp" />
     <ClInclude Include="Source\Dependencies.hpp" />
     <ClInclude Include="Source\Types.hpp" />
+    <ClInclude Include="Source\ConsoleMessages.hpp">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Console.hpp">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ConsoleColors.hpp">
+      <Filter>IO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="IO">
+      <UniqueIdentifier>{d2958542-2621-43e8-8199-b02a727cd4e3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
